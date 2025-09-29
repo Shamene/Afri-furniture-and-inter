@@ -1,0 +1,147 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* BODY */
+body {
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #001f3f; /* dark blue */
+  color: white;
+}
+
+.header .logo img {
+  height: 60px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links .active {
+  color: gold;
+}
+
+/* HERO */
+.hero {
+  background: url("../_images/index_7.jpg") no-repeat center center/cover;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: gold;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #001f3f;
+  border-bottom: 2px solid gold;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.gallery .intro {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+/* GRID LAYOUT */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #001f3f;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer .slogan {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: gold;
+}
+
+footer .socials img {
+  width: 30px;
+  margin: 0 8px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+footer .socials img:hover {
+  transform: scale(1.2);
+  filter: none;
+}

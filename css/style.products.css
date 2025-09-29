@@ -1,0 +1,190 @@
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* BODY */
+body {
+  background-color: #fefefe;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 3, 24, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  max-height: 60px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fefafa;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: goldenrod;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+/* HERO */
+.hero {
+  background: url("../_images/index_3.jpg") no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: gold;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+}
+
+/* SECTION TITLES */
+section h2 {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 2rem;
+  color: #001f3f;
+  border-bottom: 2px solid gold;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px 40px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #001f3f;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: goldenrod;
+}
+
+/* INTERIOR DESIGN GALLERY */
+.room-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.room-gallery img {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.room-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #001f3f;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer .slogan {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: gold;
+}
+
+footer .socials img {
+  width: 30px;
+  margin: 0 8px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+footer .socials img:hover {
+  transform: scale(1.2);
+  filter: none;
+}

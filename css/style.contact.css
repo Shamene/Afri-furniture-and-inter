@@ -1,0 +1,187 @@
+
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #001f3f; /* dark blue */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .logo img {
+  height: 60px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: gold;
+}
+
+/* HERO */
+.hero {
+  background: url("../_images/index_5.jpg") no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: gold;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+}
+
+
+/* Main Content */
+.main-content {
+  margin-left: 240px;
+  padding: 40px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #001f3f;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #001f3f;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: gold;
+}
+
+.contact-form button {
+  background: gold;
+  color: #001f3f;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: yellow;
+}
+
+/* Contact Info */
+.contact-info h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #001f3f;
+}
+
+.contact-info p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #001f3f;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: gold;
+}
+
+.socials {
+  margin-top: 15px;
+}
+
+.socials a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #001f3f;
+  font-weight: bold;
+}
+
+.socials a:hover {
+  color: yellow;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #001f3f;
+  color: white;
+  padding: 15px 0;
+  margin-top: 40px;
+}
